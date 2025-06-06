@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 249 249 249; /* White Smoke */
+    --foreground: 26 26 26;
+
+    --card: 255 255 255;
+    --card-foreground: 26 26 26;
+
+    --popover: 255 255 255;
+    --popover-foreground: 26 26 26;
+
+    --primary: 220 238 255; /* Baby Blue */
+    --primary-foreground: 26 26 26;
+
+    --secondary: 249 249 249; /* White Smoke */
+    --secondary-foreground: 26 26 26;
+
+    --muted: 245 245 245;
+    --muted-foreground: 107 114 128;
+
+    --accent: 237 231 246; /* Pale Lavender */
+    --accent-foreground: 26 26 26;
+
+    --destructive: 255 229 229; /* Pale Pink */
+    --destructive-foreground: 153 0 0;
+
+    --border: 224 224 224;
+    --input: 224 224 224;
+    --ring: 220 238 255; /* Baby Blue */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 26 26 26;
+    --foreground: 249 249 249;
+
+    --card: 26 26 26;
+    --card-foreground: 249 249 249;
+
+    --popover: 26 26 26;
+    --popover-foreground: 249 249 249;
+
+    --primary: 220 238 255;
+    --primary-foreground: 26 26 26;
+
+    --secondary: 64 64 64;
+    --secondary-foreground: 249 249 249;
+
+    --muted: 64 64 64;
+    --muted-foreground: 156 163 175;
+
+    --accent: 64 64 64;
+    --accent-foreground: 249 249 249;
+
+    --destructive: 153 0 0;
+    --destructive-foreground: 249 249 249;
+
+    --border: 64 64 64;
+    --input: 64 64 64;
+    --ring: 212 212 216;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes for the new color scheme */
+.bg-success {
+  background-color: #dfffe0;
+}
+
+.text-success {
+  color: #006b01;
+}
+
+.bg-error {
+  background-color: #ffe5e5;
+}
+
+.text-error {
+  color: #990000;
+}
+
+.border-success {
+  border-color: #bbffbc;
+}
+
+.border-error {
+  border-color: #ffcccc;
+}
+
+/* Gradient backgrounds for enhanced visual appeal */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #dceeff 0%, #c1e4ff 100%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, #ede7f6 0%, #d1c4e9 100%);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #dfffe0 0%, #bbffbc 100%);
+}
+
+.bg-gradient-error {
+  background: linear-gradient(135deg, #ffe5e5 0%, #ffcccc 100%);
+}
